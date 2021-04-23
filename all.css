@@ -6,17 +6,17 @@
 
 @font-face {
     font-family:'ZenDots' ;
-    src: url('/fonts/ZenDots-Regular.ttf') format('truetype');
+    src: url('fonts/ZenDots-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('/fonts/RobotoSlab-Medium.ttf') format('truetype');
+    src: url('fonts/RobotoSlab-Medium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'DancingScript';
-    src: url('/fonts/DancingScript-Regular.ttf') format('truetype');
+    src: url('fonts/DancingScript-Regular.ttf') format('truetype');
 }
 
 
