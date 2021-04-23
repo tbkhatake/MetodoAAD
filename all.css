@@ -6,17 +6,17 @@
 
 @font-face {
     font-family:'ZenDots' ;
-    src: url('/fonts/ZenDots-Regular.ttf') format('truetype');
+    src: url(/fonts/ZenDots-Regular.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('/fonts/RobotoSlab-Medium.ttf') format('truetype');
+    src: url(/fonts/RobotoSlab-Medium.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'DancingScript';
-    src: url('/fonts/DancingScript-Regular.ttf') format('truetype');
+    src: url(/fonts/DancingScript-Regular.ttf) format('truetype');
 }
 
 
@@ -27,7 +27,7 @@ html{
 body{
     width: 100%;
     background-color: rgb(43, 39, 39);
-    background-image: url("/img/graytech.jpg");
+    background-image: url(img/graytech.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
