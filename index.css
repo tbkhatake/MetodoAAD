@@ -1,0 +1,240 @@
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.introducao{
+    position: relative;
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: #75421e 10px solid;
+    background-color: #246818;
+    font-family: "DancingScript";;
+}
+
+.introducao::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    top: 30%;
+    left: 0;
+    background-color: rgb(77, 247, 247);
+    filter: blur(100px);
+}
+
+.intro-h3{
+    font-size: 1.6rem;
+}
+
+.intro-p{
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+.learning{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "ZenDots",cursive;
+}
+
+.learning-box{
+    position: relative;
+    width: 360px;
+    height: 180px;
+    margin-top: 30px;
+    transition: 0.5s;    
+}
+
+.learning-box:hover{
+    transform: translateX(-20px);
+}
+
+.learning-box::before, .learning-box::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+
+.learning-box::after{
+    filter: blur(30px);
+}
+
+.learning-box:nth-child(1)::before, .learning-box:nth-child(1)::after{
+    background: linear-gradient(45deg,rgb(211, 89, 19),rgb(243, 127, 19));
+} 
+
+.learning-box:nth-child(2)::before, .learning-box:nth-child(2)::after{
+    background: linear-gradient(45deg,rgb(15, 50, 250),rgb(2, 255, 171));
+} 
+
+.learning-box:nth-child(3)::before, .learning-box:nth-child(3)::after{
+    background: linear-gradient(45deg,rgb(253, 195, 6),rgb(230, 255, 8));
+} 
+
+.learning-box:nth-child(4)::before, .learning-box:nth-child(4)::after{
+    background: linear-gradient(45deg,rgb(115, 37, 126),rgb(209, 34, 200));
+} 
+
+.vidro{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+
+.vidro::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background: rgba(255,255,255,0.1);
+}
+
+.learning-content{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learning-h3{
+    width: 100%;
+    height: 100%;
+}
+
+.learning-h3 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 500%;
+}
+
+
+@media (min-width:768px){
+
+    .intro-p{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    .introducao{
+        margin-bottom: 20px;
+    }
+
+    .learning{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .learning-box{
+        position: relative;
+        width: 220px;
+        height: 380px;
+    }
+
+    .learning-box:hover{
+        transform: translateY(-20px);
+    }
+
+    .learning-h3 a{
+        line-height: 950%;
+        font-size: 40px;
+    }
+}
+
+@media (min-width:1024px){
+    .introducao{
+        width: 95%;
+        padding: 20px;
+    }
+    .intro-h3{
+        font-size: 3rem;
+    }
+    .intro-p{
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+    
+    .learning{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .learning-box{
+        position: relative;
+        width: 260px;
+        height: 420px;
+    }
+
+    .learning-h3 a{
+        line-height: 850%;
+        font-size: 48px;
+    }
+
+}
+
+@media (min-width:1400px){
+
+    .introducao{
+        padding: 30px;
+    }
+
+    .intro-h3{
+        font-size: 3.5rem;
+    }
+
+    .intro-p{
+        font-size: 2.5rem;
+        margin-top: 35px;
+    }
+
+    .learning{
+        width: 95%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .learning-box{
+        position: relative;
+        width: 300px;
+        height: 480px;
+    }
+
+    .learning-h3 a{
+        line-height: 820%;
+        font-size: 58px;
+    }
+
+}
