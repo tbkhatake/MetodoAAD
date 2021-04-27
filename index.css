@@ -1,7 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 main{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 15px;
 }
 
@@ -9,8 +20,12 @@ main{
     position: relative;
     width: 90%;
     padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: white;
     border: #75421e 10px solid;
     background-color: #246818;
@@ -25,7 +40,8 @@ main{
     top: 30%;
     left: 0;
     background-color: rgb(77, 247, 247);
-    filter: blur(100px);
+    -webkit-filter: blur(100px);
+            filter: blur(100px);
 }
 
 .intro-h3{
@@ -39,10 +55,17 @@ main{
 
 .learning{
     width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     font-family: "ZenDots",cursive;
 }
 
@@ -51,11 +74,15 @@ main{
     width: 360px;
     height: 180px;
     margin-top: 30px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;    
 }
 
-.learning-box:hover{
-    transform: translateX(-20px);
+.learning-box:active {
+    -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+            transform: translateX(-20px);
 }
 
 .learning-box::before, .learning-box::after{
@@ -68,22 +95,27 @@ main{
 }
 
 .learning-box::after{
-    filter: blur(30px);
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
 }
 
 .learning-box:nth-child(1)::before, .learning-box:nth-child(1)::after{
+    background: -o-linear-gradient(45deg,rgb(211, 89, 19),rgb(243, 127, 19));
     background: linear-gradient(45deg,rgb(211, 89, 19),rgb(243, 127, 19));
 } 
 
 .learning-box:nth-child(2)::before, .learning-box:nth-child(2)::after{
+    background: -o-linear-gradient(45deg,rgb(15, 50, 250),rgb(2, 255, 171));
     background: linear-gradient(45deg,rgb(15, 50, 250),rgb(2, 255, 171));
 } 
 
 .learning-box:nth-child(3)::before, .learning-box:nth-child(3)::after{
+    background: -o-linear-gradient(45deg,rgb(253, 195, 6),rgb(230, 255, 8));
     background: linear-gradient(45deg,rgb(253, 195, 6),rgb(230, 255, 8));
 } 
 
 .learning-box:nth-child(4)::before, .learning-box:nth-child(4)::after{
+    background: -o-linear-gradient(45deg,rgb(115, 37, 126),rgb(209, 34, 200));
     background: linear-gradient(45deg,rgb(115, 37, 126),rgb(209, 34, 200));
 } 
 
@@ -112,9 +144,15 @@ main{
     z-index: 2;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .learning-h3{
@@ -147,10 +185,17 @@ main{
 
     .learning{
         width: 95%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .learning-box{
@@ -159,8 +204,10 @@ main{
         height: 380px;
     }
 
-    .learning-box:hover{
-        transform: translateY(-20px);
+    .learning-box:active{
+        -webkit-transform: translateY(-20px);
+            -ms-transform: translateY(-20px);
+                transform: translateY(-20px);
     }
 
     .learning-h3 a{
@@ -184,10 +231,17 @@ main{
     
     .learning{
         width: 95%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .learning-box{
@@ -220,16 +274,29 @@ main{
 
     .learning{
         width: 95%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .learning-box{
         position: relative;
         width: 300px;
         height: 480px;
+    }
+
+    .learning-box:hover{
+        -webkit-transform: translateY(-20px);
+            -ms-transform: translateY(-20px);
+                transform: translateY(-20px);
     }
 
     .learning-h3 a{
