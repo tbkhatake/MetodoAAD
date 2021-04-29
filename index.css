@@ -16,7 +16,7 @@ main{
     margin-top: 15px;
 }
 
-.introducao{
+.intro{
     position: relative;
     width: 90%;
     padding: 10px;
@@ -32,7 +32,7 @@ main{
     font-family: "DancingScript";;
 }
 
-.introducao::before{
+.intro::before{
     content: '';
     position: absolute;
     width: 100%;
@@ -44,11 +44,11 @@ main{
             filter: blur(100px);
 }
 
-.intro-h3{
+.intro__h3{
     font-size: 1.6rem;
 }
 
-.intro-p{
+.intro__p{
     margin-top: 10px;
     font-size: 1.4rem;
 }
@@ -69,57 +69,43 @@ main{
     font-family: "ZenDots",cursive;
 }
 
-.learning-box{
+.learning__box{
     position: relative;
     width: 360px;
     height: 180px;
     margin-top: 30px;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;    
 }
 
-.learning-box:active {
-    -webkit-transform: translateX(-20px);
-        -ms-transform: translateX(-20px);
-            transform: translateX(-20px);
-}
-
-.learning-box::before, .learning-box::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left:0;
-}
-
-.learning-box::after{
-    -webkit-filter: blur(30px);
-            filter: blur(30px);
-}
-
-.learning-box:nth-child(1)::before, .learning-box:nth-child(1)::after{
+.learning__box--orange{
     background: -o-linear-gradient(45deg,rgb(211, 89, 19),rgb(243, 127, 19));
     background: linear-gradient(45deg,rgb(211, 89, 19),rgb(243, 127, 19));
-} 
+    box-shadow: 0px 0px 30px 5px rgb(243, 127, 19);
+}
 
-.learning-box:nth-child(2)::before, .learning-box:nth-child(2)::after{
+.learning__box--blue{
     background: -o-linear-gradient(45deg,rgb(15, 50, 250),rgb(2, 255, 171));
     background: linear-gradient(45deg,rgb(15, 50, 250),rgb(2, 255, 171));
+    box-shadow: 0px 0px 30px 5px rgb(2, 225, 255);
 } 
 
-.learning-box:nth-child(3)::before, .learning-box:nth-child(3)::after{
+.learning__box--yellow{
     background: -o-linear-gradient(45deg,rgb(253, 195, 6),rgb(230, 255, 8));
     background: linear-gradient(45deg,rgb(253, 195, 6),rgb(230, 255, 8));
+    box-shadow: 0px 0px 30px 5px rgb(230, 255, 8);
 } 
 
-.learning-box:nth-child(4)::before, .learning-box:nth-child(4)::after{
+.learning__box--purple{
     background: -o-linear-gradient(45deg,rgb(115, 37, 126),rgb(209, 34, 200));
     background: linear-gradient(45deg,rgb(115, 37, 126),rgb(209, 34, 200));
+    box-shadow: 0px 0px 30px 5px rgb(209, 34, 200);
 } 
 
-.vidro{
+.learning__box:active{
+    background: #4dda35;
+    box-shadow: 0px 0px 30px 5px #38a824;
+}
+
+.learning__vidro{
     position: absolute;
     top: 5px;
     right: 5px;
@@ -129,7 +115,7 @@ main{
     z-index: 1;
 }
 
-.vidro::before{
+.learning__vidro::before{
     content: '';
     position: absolute;
     width: 100%;
@@ -139,7 +125,7 @@ main{
     background: rgba(255,255,255,0.1);
 }
 
-.learning-content{
+.learning__box .learning__content{
     position: relative;
     z-index: 2;
     width: 100%;
@@ -155,12 +141,12 @@ main{
             align-items: center;
 }
 
-.learning-h3{
+.learning__h3{
     width: 100%;
     height: 100%;
 }
 
-.learning-h3 a{
+.learning__a{
     display: block;
     width: 100%;
     height: 100%;
@@ -174,12 +160,12 @@ main{
 
 @media (min-width:768px){
 
-    .intro-p{
+    .intro__p{
         margin-top: 20px;
         font-size: 1.5rem;
     }
 
-    .introducao{
+    .intro{
         margin-bottom: 20px;
     }
 
@@ -198,7 +184,7 @@ main{
             flex-wrap: wrap;
     }
 
-    .learning-box{
+    .learning__box{
         position: relative;
         width: 220px;
         height: 380px;
@@ -210,21 +196,21 @@ main{
                 transform: translateY(-20px);
     }
 
-    .learning-h3 a{
+    .learning__a{
         line-height: 950%;
         font-size: 40px;
     }
 }
 
 @media (min-width:1024px){
-    .introducao{
+    .intro{
         width: 95%;
         padding: 20px;
     }
-    .intro-h3{
+    .intro__h3{
         font-size: 3rem;
     }
-    .intro-p{
+    .intro__p{
         font-size: 2rem;
         margin-top: 30px;
     }
@@ -244,30 +230,30 @@ main{
             flex-wrap: wrap;
     }
 
-    .learning-box{
+    .learning__box{
         position: relative;
         width: 260px;
         height: 420px;
     }
 
-    .learning-h3 a{
+    .learning__a{
         line-height: 850%;
         font-size: 48px;
     }
 
 }
 
-@media (min-width:1400px){
+@media (min-width:1380px){
 
-    .introducao{
+    .intro{
         padding: 30px;
     }
 
-    .intro-h3{
+    .intro__h3{
         font-size: 3.5rem;
     }
 
-    .intro-p{
+    .intro__p{
         font-size: 2.5rem;
         margin-top: 35px;
     }
@@ -287,19 +273,22 @@ main{
             flex-wrap: wrap;
     }
 
-    .learning-box{
+    .learning__box{
         position: relative;
         width: 300px;
         height: 480px;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;    
     }
 
-    .learning-box:hover{
+    .learning__box:hover{
         -webkit-transform: translateY(-20px);
             -ms-transform: translateY(-20px);
                 transform: translateY(-20px);
     }
 
-    .learning-h3 a{
+    .learning__a{
         line-height: 820%;
         font-size: 58px;
     }

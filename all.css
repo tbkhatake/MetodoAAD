@@ -58,7 +58,7 @@ header{
         flex-wrap: wrap;
 }
 
-.AAD_logo{
+.logo{
     width: 100%;
     height: 80px;
     border: 5px solid #75421e;
@@ -71,7 +71,7 @@ header{
             justify-content: center;
 }
 
-#logo-img{
+.logo__img{
     width: 320px;
     height: 100%;
 }
@@ -99,7 +99,7 @@ nav{
     
 }
 
-.menu-item{
+.menu__item{
     text-align: center;
     list-style: none;
     margin-right: 1px;
@@ -110,7 +110,7 @@ nav{
     background:linear-gradient(240deg,rgba(15, 155, 155, 0.219), green) ;
 }
 
-.menu-item a{
+.menu__item a{
     display: block;
     text-decoration: none;
     color: white;
@@ -119,7 +119,7 @@ nav{
     line-height: 250%;
 }
 
-.menu-item a:hover{
+.menu__item a:hover{
     color: green;
     background: rgb(143, 253, 33,0.7);
     font-weight: bold;
@@ -136,7 +136,7 @@ footer{
 /**/
 
 @media (mid-width:360px){
-    .menu-item a{
+    .menu__item a{
         font-size: 1rem;
         line-height: 200%;
     }
@@ -156,7 +156,7 @@ footer{
         margin-bottom: 20px;
     }
 
-    .AAD_logo{
+    .logo{
         width: 30%;
         height: 80px;
     }
@@ -165,14 +165,14 @@ footer{
         height: 80px;
     }
 
-    .menu-item a{
+    .menu__item a{
         line-height: 350%;
         font-size: 1.2rem;
     }
 }
 
 @media (min-width:1024px){
-    .AAD_logo{
+    .logo{
         width: 25%;
         height: 100px;
     }
@@ -181,14 +181,14 @@ footer{
         height: 100px;
     }
 
-    .menu-item a{
+    .menu__item a{
         font-size: 1.7rem;
         line-height: 350%;
     }
 }
 
 @media (min-width:1400px){
-    .AAD_logo{
+    .logo{
         width: 25%;
         height: 120px;
     }
@@ -197,7 +197,7 @@ footer{
         height: 120px;
     }
 
-    .menu-item a{
+    .menu__item a{
         line-height: 350%;
         font-size: 2rem;
     }
