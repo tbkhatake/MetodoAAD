@@ -146,7 +146,7 @@ main{
     height: 100%;
 }
 
-.learning__a{
+.learning__subjects a{
     display: block;
     width: 100%;
     height: 100%;
@@ -196,7 +196,7 @@ main{
                 transform: translateY(-20px);
     }
 
-    .learning__a{
+    .learning__subjects a{
         line-height: 950%;
         font-size: 40px;
     }
@@ -236,7 +236,7 @@ main{
         height: 420px;
     }
 
-    .learning__a{
+    .learning__subjects a{
         line-height: 850%;
         font-size: 48px;
     }
@@ -288,7 +288,7 @@ main{
                 transform: translateY(-20px);
     }
 
-    .learning__a{
+    .learning__subjects a{
         line-height: 820%;
         font-size: 58px;
     }
